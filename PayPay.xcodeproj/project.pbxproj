@@ -75,6 +75,8 @@
 		FAEA1D772B2A00D500EC0715 /* PayPay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PayPay.entitlements; sourceTree = "<group>"; };
 		FAEA1D782B2A00F200EC0715 /* walletExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walletExtension.entitlements; sourceTree = "<group>"; };
 		FAEA1D792B2A010600EC0715 /* walletExtensionUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walletExtensionUI.entitlements; sourceTree = "<group>"; };
+		FAEA1D7A2B2A153100EC0715 /* walletExtensionUIRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walletExtensionUIRelease.entitlements; sourceTree = "<group>"; };
+		FAEA1D7B2B2A154800EC0715 /* walletExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walletExtensionRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		FAEA1D582B2A00C500EC0715 /* walletExtension */ = {
 			isa = PBXGroup;
 			children = (
+				FAEA1D7B2B2A154800EC0715 /* walletExtensionRelease.entitlements */,
 				FAEA1D782B2A00F200EC0715 /* walletExtension.entitlements */,
 				FAEA1D592B2A00C500EC0715 /* IssuerExtensionHandler.swift */,
 				FAEA1D5B2B2A00C500EC0715 /* Info.plist */,
@@ -162,6 +165,7 @@
 		FAEA1D632B2A00C500EC0715 /* walletExtensionUI */ = {
 			isa = PBXGroup;
 			children = (
+				FAEA1D7A2B2A153100EC0715 /* walletExtensionUIRelease.entitlements */,
 				FAEA1D792B2A010600EC0715 /* walletExtensionUI.entitlements */,
 				FAEA1D642B2A00C500EC0715 /* IssuerAuthorizationExtensionHandler.swift */,
 				FAEA1D662B2A00C500EC0715 /* MainInterface.storyboard */,
@@ -574,7 +578,7 @@
 		FAEA1D722B2A00C500EC0715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = walletExtensionUI/walletExtensionUI.entitlements;
+				CODE_SIGN_ENTITLEMENTS = walletExtensionUI/walletExtensionUIRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TDTJJT9YLY;
@@ -626,7 +630,7 @@
 		FAEA1D752B2A00C500EC0715 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = PayPay/PayPay.entitlements;
+				CODE_SIGN_ENTITLEMENTS = walletExtension/walletExtensionRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TDTJJT9YLY;
