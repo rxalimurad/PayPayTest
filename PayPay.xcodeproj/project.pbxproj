@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAEA1D3D2B29FE8200EC0715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1D3C2B29FE8200EC0715 /* AppDelegate.swift */; };
+		FAEA1D3F2B29FE8200EC0715 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1D3E2B29FE8200EC0715 /* SceneDelegate.swift */; };
+		FAEA1D412B29FE8200EC0715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1D402B29FE8200EC0715 /* ViewController.swift */; };
+		FAEA1D442B29FE8200EC0715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA1D422B29FE8200EC0715 /* Main.storyboard */; };
+		FAEA1D462B29FE8400EC0715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEA1D452B29FE8400EC0715 /* Assets.xcassets */; };
+		FAEA1D492B29FE8400EC0715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA1D472B29FE8400EC0715 /* LaunchScreen.storyboard */; };
+		FAEA1D572B2A00C500EC0715 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA1D562B2A00C500EC0715 /* Intents.framework */; };
+		FAEA1D5A2B2A00C500EC0715 /* IssuerExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1D592B2A00C500EC0715 /* IssuerExtensionHandler.swift */; };
+		FAEA1D622B2A00C500EC0715 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEA1D612B2A00C500EC0715 /* IntentsUI.framework */; };
+		FAEA1D652B2A00C500EC0715 /* IssuerAuthorizationExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA1D642B2A00C500EC0715 /* IssuerAuthorizationExtensionHandler.swift */; };
+		FAEA1D682B2A00C500EC0715 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEA1D662B2A00C500EC0715 /* MainInterface.storyboard */; };
+		FAEA1D6C2B2A00C500EC0715 /* walletExtensionUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FAEA1D602B2A00C500EC0715 /* walletExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAEA1D6F2B2A00C500EC0715 /* walletExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FAEA1D542B2A00C500EC0715 /* walletExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAEA1D6A2B2A00C500EC0715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEA1D312B29FE8200EC0715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA1D5F2B2A00C500EC0715;
+			remoteInfo = walletExtensionUI;
+		};
+		FAEA1D6D2B2A00C500EC0715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEA1D312B29FE8200EC0715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA1D532B2A00C500EC0715;
+			remoteInfo = walletExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAEA1D762B2A00C500EC0715 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAEA1D6C2B2A00C500EC0715 /* walletExtensionUI.appex in Embed Foundation Extensions */,
+				FAEA1D6F2B2A00C500EC0715 /* walletExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FAEA1D392B29FE8200EC0715 /* PayPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA1D3C2B29FE8200EC0715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAEA1D3E2B29FE8200EC0715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAEA1D402B29FE8200EC0715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAEA1D432B29FE8200EC0715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAEA1D452B29FE8400EC0715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAEA1D482B29FE8400EC0715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAEA1D4A2B29FE8400EC0715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA1D542B2A00C500EC0715 /* walletExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = walletExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA1D562B2A00C500EC0715 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		FAEA1D592B2A00C500EC0715 /* IssuerExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuerExtensionHandler.swift; sourceTree = "<group>"; };
+		FAEA1D5B2B2A00C500EC0715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA1D602B2A00C500EC0715 /* walletExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = walletExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA1D612B2A00C500EC0715 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		FAEA1D642B2A00C500EC0715 /* IssuerAuthorizationExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuerAuthorizationExtensionHandler.swift; sourceTree = "<group>"; };
+		FAEA1D672B2A00C500EC0715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FAEA1D692B2A00C500EC0715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEA1D772B2A00D500EC0715 /* PayPay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PayPay.entitlements; sourceTree = "<group>"; };
+		FAEA1D782B2A00F200EC0715 /* walletExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walletExtension.entitlements; sourceTree = "<group>"; };
+		FAEA1D792B2A010600EC0715 /* walletExtensionUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walletExtensionUI.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAEA1D362B29FE8200EC0715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA1D512B2A00C500EC0715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D572B2A00C500EC0715 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA1D5D2B2A00C500EC0715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D622B2A00C500EC0715 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAEA1D302B29FE8200EC0715 = {
+			isa = PBXGroup;
+			children = (
+				FAEA1D3B2B29FE8200EC0715 /* PayPay */,
+				FAEA1D582B2A00C500EC0715 /* walletExtension */,
+				FAEA1D632B2A00C500EC0715 /* walletExtensionUI */,
+				FAEA1D552B2A00C500EC0715 /* Frameworks */,
+				FAEA1D3A2B29FE8200EC0715 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAEA1D3A2B29FE8200EC0715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1D392B29FE8200EC0715 /* PayPay.app */,
+				FAEA1D542B2A00C500EC0715 /* walletExtension.appex */,
+				FAEA1D602B2A00C500EC0715 /* walletExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAEA1D3B2B29FE8200EC0715 /* PayPay */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1D772B2A00D500EC0715 /* PayPay.entitlements */,
+				FAEA1D3C2B29FE8200EC0715 /* AppDelegate.swift */,
+				FAEA1D3E2B29FE8200EC0715 /* SceneDelegate.swift */,
+				FAEA1D402B29FE8200EC0715 /* ViewController.swift */,
+				FAEA1D422B29FE8200EC0715 /* Main.storyboard */,
+				FAEA1D452B29FE8400EC0715 /* Assets.xcassets */,
+				FAEA1D472B29FE8400EC0715 /* LaunchScreen.storyboard */,
+				FAEA1D4A2B29FE8400EC0715 /* Info.plist */,
+			);
+			path = PayPay;
+			sourceTree = "<group>";
+		};
+		FAEA1D552B2A00C500EC0715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1D562B2A00C500EC0715 /* Intents.framework */,
+				FAEA1D612B2A00C500EC0715 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAEA1D582B2A00C500EC0715 /* walletExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1D782B2A00F200EC0715 /* walletExtension.entitlements */,
+				FAEA1D592B2A00C500EC0715 /* IssuerExtensionHandler.swift */,
+				FAEA1D5B2B2A00C500EC0715 /* Info.plist */,
+			);
+			path = walletExtension;
+			sourceTree = "<group>";
+		};
+		FAEA1D632B2A00C500EC0715 /* walletExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				FAEA1D792B2A010600EC0715 /* walletExtensionUI.entitlements */,
+				FAEA1D642B2A00C500EC0715 /* IssuerAuthorizationExtensionHandler.swift */,
+				FAEA1D662B2A00C500EC0715 /* MainInterface.storyboard */,
+				FAEA1D692B2A00C500EC0715 /* Info.plist */,
+			);
+			path = walletExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAEA1D382B29FE8200EC0715 /* PayPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA1D4D2B29FE8400EC0715 /* Build configuration list for PBXNativeTarget "PayPay" */;
+			buildPhases = (
+				FAEA1D352B29FE8200EC0715 /* Sources */,
+				FAEA1D362B29FE8200EC0715 /* Frameworks */,
+				FAEA1D372B29FE8200EC0715 /* Resources */,
+				FAEA1D762B2A00C500EC0715 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEA1D6B2B2A00C500EC0715 /* PBXTargetDependency */,
+				FAEA1D6E2B2A00C500EC0715 /* PBXTargetDependency */,
+			);
+			name = PayPay;
+			productName = PayPay;
+			productReference = FAEA1D392B29FE8200EC0715 /* PayPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAEA1D532B2A00C500EC0715 /* walletExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA1D732B2A00C500EC0715 /* Build configuration list for PBXNativeTarget "walletExtension" */;
+			buildPhases = (
+				FAEA1D502B2A00C500EC0715 /* Sources */,
+				FAEA1D512B2A00C500EC0715 /* Frameworks */,
+				FAEA1D522B2A00C500EC0715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walletExtension;
+			productName = walletExtension;
+			productReference = FAEA1D542B2A00C500EC0715 /* walletExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FAEA1D5F2B2A00C500EC0715 /* walletExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEA1D702B2A00C500EC0715 /* Build configuration list for PBXNativeTarget "walletExtensionUI" */;
+			buildPhases = (
+				FAEA1D5C2B2A00C500EC0715 /* Sources */,
+				FAEA1D5D2B2A00C500EC0715 /* Frameworks */,
+				FAEA1D5E2B2A00C500EC0715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walletExtensionUI;
+			productName = walletExtensionUI;
+			productReference = FAEA1D602B2A00C500EC0715 /* walletExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAEA1D312B29FE8200EC0715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FAEA1D382B29FE8200EC0715 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					FAEA1D532B2A00C500EC0715 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					FAEA1D5F2B2A00C500EC0715 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FAEA1D342B29FE8200EC0715 /* Build configuration list for PBXProject "PayPay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAEA1D302B29FE8200EC0715;
+			productRefGroup = FAEA1D3A2B29FE8200EC0715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEA1D382B29FE8200EC0715 /* PayPay */,
+				FAEA1D532B2A00C500EC0715 /* walletExtension */,
+				FAEA1D5F2B2A00C500EC0715 /* walletExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAEA1D372B29FE8200EC0715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D492B29FE8400EC0715 /* LaunchScreen.storyboard in Resources */,
+				FAEA1D462B29FE8400EC0715 /* Assets.xcassets in Resources */,
+				FAEA1D442B29FE8200EC0715 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA1D522B2A00C500EC0715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA1D5E2B2A00C500EC0715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D682B2A00C500EC0715 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAEA1D352B29FE8200EC0715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D412B29FE8200EC0715 /* ViewController.swift in Sources */,
+				FAEA1D3D2B29FE8200EC0715 /* AppDelegate.swift in Sources */,
+				FAEA1D3F2B29FE8200EC0715 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA1D502B2A00C500EC0715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D5A2B2A00C500EC0715 /* IssuerExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEA1D5C2B2A00C500EC0715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEA1D652B2A00C500EC0715 /* IssuerAuthorizationExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAEA1D6B2B2A00C500EC0715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA1D5F2B2A00C500EC0715 /* walletExtensionUI */;
+			targetProxy = FAEA1D6A2B2A00C500EC0715 /* PBXContainerItemProxy */;
+		};
+		FAEA1D6E2B2A00C500EC0715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA1D532B2A00C500EC0715 /* walletExtension */;
+			targetProxy = FAEA1D6D2B2A00C500EC0715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAEA1D422B29FE8200EC0715 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEA1D432B29FE8200EC0715 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAEA1D472B29FE8400EC0715 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEA1D482B29FE8400EC0715 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FAEA1D662B2A00C500EC0715 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEA1D672B2A00C500EC0715 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAEA1D4B2B29FE8400EC0715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAEA1D4C2B29FE8400EC0715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAEA1D4E2B29FE8400EC0715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PayPay/PayPay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TDTJJT9YLY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PayPay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesmeapps.PayPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEA1D4F2B29FE8400EC0715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PayPay/PayPay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TDTJJT9YLY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PayPay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesmeapps.PayPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAEA1D712B2A00C500EC0715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = walletExtensionUI/walletExtensionUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TDTJJT9YLY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = walletExtensionUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = walletExtensionUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesmeapps.PayPay.IssuerUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEA1D722B2A00C500EC0715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = walletExtensionUI/walletExtensionUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TDTJJT9YLY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = walletExtensionUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = walletExtensionUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesmeapps.PayPay.IssuerUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAEA1D742B2A00C500EC0715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PayPay/PayPay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TDTJJT9YLY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = walletExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = walletExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesmeapps.PayPay.IssuerNonUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEA1D752B2A00C500EC0715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PayPay/PayPay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TDTJJT9YLY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = walletExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = walletExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesmeapps.PayPay.IssuerNonUIExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAEA1D342B29FE8200EC0715 /* Build configuration list for PBXProject "PayPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA1D4B2B29FE8400EC0715 /* Debug */,
+				FAEA1D4C2B29FE8400EC0715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA1D4D2B29FE8400EC0715 /* Build configuration list for PBXNativeTarget "PayPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA1D4E2B29FE8400EC0715 /* Debug */,
+				FAEA1D4F2B29FE8400EC0715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA1D702B2A00C500EC0715 /* Build configuration list for PBXNativeTarget "walletExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA1D712B2A00C500EC0715 /* Debug */,
+				FAEA1D722B2A00C500EC0715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEA1D732B2A00C500EC0715 /* Build configuration list for PBXNativeTarget "walletExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEA1D742B2A00C500EC0715 /* Debug */,
+				FAEA1D752B2A00C500EC0715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAEA1D312B29FE8200EC0715 /* Project object */;
+}
