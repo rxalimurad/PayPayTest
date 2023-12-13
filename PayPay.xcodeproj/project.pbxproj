@@ -55,7 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FAEA1D392B29FE8200EC0715 /* PayPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEA1D392B29FE8200EC0715 /* WalletExTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletExTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEA1D3C2B29FE8200EC0715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEA1D3E2B29FE8200EC0715 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAEA1D402B29FE8200EC0715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		FAEA1D3A2B29FE8200EC0715 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAEA1D392B29FE8200EC0715 /* PayPay.app */,
+				FAEA1D392B29FE8200EC0715 /* WalletExTest.app */,
 				FAEA1D542B2A00C500EC0715 /* walletExtension.appex */,
 				FAEA1D602B2A00C500EC0715 /* walletExtensionUI.appex */,
 			);
@@ -173,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAEA1D382B29FE8200EC0715 /* PayPay */ = {
+		FAEA1D382B29FE8200EC0715 /* WalletExTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAEA1D4D2B29FE8400EC0715 /* Build configuration list for PBXNativeTarget "PayPay" */;
+			buildConfigurationList = FAEA1D4D2B29FE8400EC0715 /* Build configuration list for PBXNativeTarget "WalletExTest" */;
 			buildPhases = (
 				FAEA1D352B29FE8200EC0715 /* Sources */,
 				FAEA1D362B29FE8200EC0715 /* Frameworks */,
@@ -188,9 +188,9 @@
 				FAEA1D6B2B2A00C500EC0715 /* PBXTargetDependency */,
 				FAEA1D6E2B2A00C500EC0715 /* PBXTargetDependency */,
 			);
-			name = PayPay;
+			name = WalletExTest;
 			productName = PayPay;
-			productReference = FAEA1D392B29FE8200EC0715 /* PayPay.app */;
+			productReference = FAEA1D392B29FE8200EC0715 /* WalletExTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FAEA1D532B2A00C500EC0715 /* walletExtension */ = {
@@ -261,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAEA1D382B29FE8200EC0715 /* PayPay */,
+				FAEA1D382B29FE8200EC0715 /* WalletExTest */,
 				FAEA1D532B2A00C500EC0715 /* walletExtension */,
 				FAEA1D5F2B2A00C500EC0715 /* walletExtensionUI */,
 			);
@@ -661,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAEA1D4D2B29FE8400EC0715 /* Build configuration list for PBXNativeTarget "PayPay" */ = {
+		FAEA1D4D2B29FE8400EC0715 /* Build configuration list for PBXNativeTarget "WalletExTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAEA1D4E2B29FE8400EC0715 /* Debug */,
