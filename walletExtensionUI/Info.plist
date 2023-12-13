@@ -4,8 +4,6 @@
 <dict>
 	<key>NSExtension</key>
 	<dict>
-		<key>NSExtensionMainStoryboard</key>
-		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.PassKit.issuer-provisioning.authorization</string>
 		<key>NSExtensionPrincipalClass</key>
